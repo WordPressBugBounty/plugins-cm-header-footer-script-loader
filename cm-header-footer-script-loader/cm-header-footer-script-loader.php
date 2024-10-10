@@ -2,7 +2,7 @@
 /*
 Plugin Name: CM Header & Footer Script Loader
 Description: This plugin allows you to load scripts and styles on selected posts or pages
-Version: 1.2.0
+Version: 1.2.1
 Author: CreativeMindsSolutions
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
