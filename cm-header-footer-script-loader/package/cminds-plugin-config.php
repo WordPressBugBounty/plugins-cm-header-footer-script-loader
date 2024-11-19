@@ -6,7 +6,7 @@ ob_end_clean();
 $cminds_plugin_config = array(
 	'plugin-is-pro'				 => FALSE,
 	'plugin-is-addon'			 => FALSE,
-	'plugin-version'			 => '1.2.1',
+	'plugin-version'			 => '1.2.2',
 	'plugin-abbrev'				 => 'cmhandfsl',
 	'plugin-file'				 => CMHeaderAndFooterSL::$plugin_file,
 	'plugin-dir-path'			 => plugin_dir_path( CMHeaderAndFooterSL::$plugin_file ),
