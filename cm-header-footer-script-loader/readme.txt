@@ -6,7 +6,7 @@ Author URI: https://www.cminds.com/
 Tags: footer, header, custom css, insert javascript, insert HTML
 Requires at least: 5.4.0
 Tested up to: 6.7
-Stable Tag: 1.2.2
+Stable Tag: 1.2.3
 Requires PHP: 5.2.4
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -94,6 +94,10 @@ List of all [WordPress Plugins](https://www.cminds.com) by CreativeMinds
 2. Activate the plugin through the 'Plugins' menu in WordPress.
 
 == Changelog ==
+
+= 1.2.3 =
+Release Date: 07 Jan 2025
+* Fixed vulnerability issue
 
 = 1.2.2 =
 Release Date: 19 Nov 2024
