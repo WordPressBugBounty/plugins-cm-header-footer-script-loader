@@ -2,10 +2,20 @@
 echo do_shortcode('[cminds_free_activation id="cmhandfsl"]');
 ?>
 <div style="height:15px;"></div>
-
 <div class="cminds_settings_description">
-   
-
+	<p>
+        <strong><?php _e( 'Plugin Usage Instructions:', CMHeaderAndFooterSL::$plugin_text_domain ); ?></strong> <a href="javascript:void(0)" onclick="jQuery(this).parent().next().slideToggle()"><?php _e( 'Show/Hide', CMHeaderAndFooterSL::$plugin_text_domain ); ?></a>
+    </p>
+    <div style="display:none">
+		<ol>
+			<li><?php _e( 'Click <strong>"Add New Script"</strong>.', CMHeaderAndFooterSL::$plugin_text_domain ); ?></li>
+			<li><?php _e( 'Fill the <strong>"Script Name"</strong> field and paste <strong>"Script Code"</strong>.', CMHeaderAndFooterSL::$plugin_text_domain ); ?></li>
+			<li><?php _e( 'Click <strong>"Expand Additional Settings"</strong>.', CMHeaderAndFooterSL::$plugin_text_domain ); ?></li>
+			<li><?php _e( 'Optionally, add an note with explanations for a script.', CMHeaderAndFooterSL::$plugin_text_domain ); ?></li>
+			<li><?php _e( 'Select <strong>"Script Type"</strong>, <strong>"Script Location"</strong> and <strong>"Where to Load"</strong>.', CMHeaderAndFooterSL::$plugin_text_domain ); ?></li>
+			<li><?php _e( 'Click <strong>"Save Script"</strong>.', CMHeaderAndFooterSL::$plugin_text_domain ); ?></li>
+		</ol>
+    </div>
     <div>
         <div class="cmtt_field_message_container"></div>
         <form method="post">
@@ -16,7 +26,5 @@ echo do_shortcode('[cminds_free_activation id="cmhandfsl"]');
         </form>
     </div>
 </div>
-
 <br/>
-
 <div class="clear"></div>

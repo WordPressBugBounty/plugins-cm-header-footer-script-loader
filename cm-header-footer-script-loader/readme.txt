@@ -6,7 +6,7 @@ Author URI: https://www.cminds.com/
 Tags: footer, header, custom css, insert javascript, insert HTML
 Requires at least: 5.4.0
 Tested up to: 6.7
-Stable Tag: 1.2.3
+Stable Tag: 1.2.4
 Requires PHP: 5.2.4
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -67,10 +67,12 @@ The [Insert Headers and Footers Plugin Premium editions](https://www.cminds.com/
 
 == Plugin usage instructions ==
 
-1. Fill the "Script Name" field and paste "Script Code"
-2. Select "Script Type" (CSS or JS), "Script Location" (header or footer), and "Autoload Option"
-3. Check "Custom Post Types" on which script should be loaded if necessary
-4. Click "Save Changes"
+1. Click "Add New Script".
+2. Fill the "Script Name" field and paste "Script Code".
+3. Click "Expand Additional Settings".
+4. Optionally, add an note with explanations for a script.
+5. Select "Script Type", "Script Location" and "Where to Load".
+6. Click "Save Script".
 
 == Suggested Plugins by CreativeMinds ==
 
@@ -94,6 +96,10 @@ List of all [WordPress Plugins](https://www.cminds.com) by CreativeMinds
 2. Activate the plugin through the 'Plugins' menu in WordPress.
 
 == Changelog ==
+
+= 1.2.4 =
+Release Date: 14 Jan 2025
+* Implement new user interface
 
 = 1.2.3 =
 Release Date: 07 Jan 2025

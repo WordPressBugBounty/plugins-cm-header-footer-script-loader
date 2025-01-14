@@ -74,17 +74,49 @@
         <td style="width:40%; border-bottom: 1px solid #c0c0c0; border-right: 1px solid #c0c0c0;">
             Unlimited scripts and styles
             <span class="dashicons dashicons-info-outline cminds-package-show-tooltip" style="color:green"
-                  title="Manage multiple JSS scripts and CSS styles across your site."></span>
+                  title="Manage multiple scripts across your site."></span>
         </td>
         <td style="text-align:center; width:30%; border-bottom: 1px solid #c0c0c0;"><span class="dashicons dashicons-yes" style="color:green"></span></td>
         <td style="text-align:center; width:30%; border-bottom: 1px solid #c0c0c0;"><span class="dashicons dashicons-yes" style="color:green"></span></td>
     </tr>
     <tr>
         <td style="width:40%; border-bottom: 1px solid #c0c0c0; border-right: 1px solid #c0c0c0;">
-            Load in the header or in footer
+            Edit Scripts Content
             <span class="dashicons dashicons-info-outline cminds-package-show-tooltip" style="color:green"
-                  title="Per each script or style you can decide if to upload it on the header section (before or after the body tag) or the footer sections (before the closing body tag)."></span></td>
+                  title="You can add custom titles and add internal notes to scripts."></span></td>
         <td style="text-align:center; width:30%; border-bottom: 1px solid #c0c0c0;"><span class="dashicons dashicons-yes" style="color:green"></span></td>
+        <td style="text-align:center; width:30%; border-bottom: 1px solid #c0c0c0;"><span class="dashicons dashicons-yes" style="color:green"></span></td>
+    </tr>
+    <tr>
+        <td style="width:40%; border-bottom: 1px solid #c0c0c0; border-right: 1px solid #c0c0c0;">
+            Load in the Header and Footer
+            <span class="dashicons dashicons-info-outline cminds-package-show-tooltip" style="color:green"
+                  title="Per each script you can decide if to load it in the header or footer section."></span></td>
+        <td style="text-align:center; width:30%; border-bottom: 1px solid #c0c0c0;"><span class="dashicons dashicons-yes" style="color:green"></span></td>
+        <td style="text-align:center; width:30%; border-bottom: 1px solid #c0c0c0;"><span class="dashicons dashicons-yes" style="color:green"></span></td>
+    </tr>
+    <tr>
+        <td style="width:40%; border-bottom: 1px solid #c0c0c0; border-right: 1px solid #c0c0c0;">
+            CSS and JS scripts support
+            <span class="dashicons dashicons-info-outline cminds-package-show-tooltip" style="color:green"
+                  title="Create JSS scripts and CSS styles."></span></td>
+        <td style="text-align:center; width:30%; border-bottom: 1px solid #c0c0c0;"><span class="dashicons dashicons-yes" style="color:green"></span></td>
+        <td style="text-align:center; width:30%; border-bottom: 1px solid #c0c0c0;"><span class="dashicons dashicons-yes" style="color:green"></span></td>
+    </tr>
+    <tr>
+        <td style="width:40%; border-bottom: 1px solid #c0c0c0; border-right: 1px solid #c0c0c0;">
+            HTML and PHP scripts support
+            <span class="dashicons dashicons-info-outline cminds-package-show-tooltip" style="color:green"
+                  title="Create HTML and PHP scripts."></span></td>
+        <td style="text-align:center; width:30%; border-bottom: 1px solid #c0c0c0;"><span class="dashicons dashicons-no" style="color:red"></span></td>
+        <td style="text-align:center; width:30%; border-bottom: 1px solid #c0c0c0;"><span class="dashicons dashicons-yes" style="color:green"></span></td>
+    </tr>
+    <tr>
+        <td style="width:40%; border-bottom: 1px solid #c0c0c0; border-right: 1px solid #c0c0c0;">
+            Load in the chosen section
+            <span class="dashicons dashicons-info-outline cminds-package-show-tooltip" style="color:green"
+                  title="Per each script you can decide if to load it in the header, in the footer, before the closing body tag, before content or after content."></span></td>
+        <td style="text-align:center; width:30%; border-bottom: 1px solid #c0c0c0;"><span class="dashicons dashicons-no" style="color:red"></span></td>
         <td style="text-align:center; width:30%; border-bottom: 1px solid #c0c0c0;"><span class="dashicons dashicons-yes" style="color:green"></span></td>
     </tr>
     <tr>
@@ -97,9 +129,17 @@
     </tr>
     <tr>
         <td style="width:40%; border-bottom: 1px solid #c0c0c0; border-right: 1px solid #c0c0c0;">
-            Edit Headers & Footer Content
+            Timeframe support
             <span class="dashicons dashicons-info-outline cminds-package-show-tooltip" style="color:green"
-                  title="You can add custom headers and edit headers or footer scripts."></span></td>
+                  title="Set specific time intervals when the script should be active."></span></td>
+        <td style="text-align:center; width:30%; border-bottom: 1px solid #c0c0c0;"><span class="dashicons dashicons-no" style="color:red"></span></td>
+        <td style="text-align:center; width:30%; border-bottom: 1px solid #c0c0c0;"><span class="dashicons dashicons-yes" style="color:green"></span></td>
+    </tr>
+    <tr>
+        <td style="width:40%; border-bottom: 1px solid #c0c0c0; border-right: 1px solid #c0c0c0;">
+            Pause scripts
+            <span class="dashicons dashicons-info-outline cminds-package-show-tooltip" style="color:green"
+                  title="Easily pause scripts when needed."></span></td>
         <td style="text-align:center; width:30%; border-bottom: 1px solid #c0c0c0;"><span class="dashicons dashicons-no" style="color:red"></span></td>
         <td style="text-align:center; width:30%; border-bottom: 1px solid #c0c0c0;"><span class="dashicons dashicons-yes" style="color:green"></span></td>
     </tr>
@@ -143,6 +183,14 @@
             Target by post type
             <span class="dashicons dashicons-info-outline cminds-package-show-tooltip" style="color:green"
                   title="You can target scripts and styles to a specific group of post by post type."></span></td>
+        <td style="text-align:center; width:30%; border-bottom: 1px solid #c0c0c0;"><span class="dashicons dashicons-yes" style="color:green"></span></td>
+        <td style="text-align:center; width:30%; border-bottom: 1px solid #c0c0c0;"><span class="dashicons dashicons-yes" style="color:green"></span></td>
+    </tr>
+    <tr>
+        <td style="width:40%; border-bottom: 1px solid #c0c0c0; border-right: 1px solid #c0c0c0;">
+            Target script by specific posts and pages
+            <span class="dashicons dashicons-info-outline cminds-package-show-tooltip" style="color:green"
+                  title="Choose specific posts and pages where you want to load the script."></span></td>
         <td style="text-align:center; width:30%; border-bottom: 1px solid #c0c0c0;"><span class="dashicons dashicons-no" style="color:red"></span></td>
         <td style="text-align:center; width:30%; border-bottom: 1px solid #c0c0c0;"><span class="dashicons dashicons-yes" style="color:green"></span></td>
     </tr>
@@ -154,6 +202,24 @@
         <td style="text-align:center; width:30%; border-bottom: 1px solid #c0c0c0;"><span class="dashicons dashicons-no" style="color:red"></span></td>
         <td style="text-align:center; width:30%; border-bottom: 1px solid #c0c0c0;"><span class="dashicons dashicons-yes" style="color:green"></span></td>
     </tr>
+    <tr>
+        <td style="width:40%; border-bottom: 1px solid #c0c0c0; border-right: 1px solid #c0c0c0;">
+            Target script by post categories
+            <span class="dashicons dashicons-info-outline cminds-package-show-tooltip" style="color:green"
+                  title="Select post categories where the script should load."></span></td>
+        <td style="text-align:center; width:30%; border-bottom: 1px solid #c0c0c0;"><span class="dashicons dashicons-no" style="color:red"></span></td>
+        <td style="text-align:center; width:30%; border-bottom: 1px solid #c0c0c0;"><span class="dashicons dashicons-yes" style="color:green"></span></td>
+    </tr>
+
+    <tr>
+        <td style="width:40%; border-bottom: 1px solid #c0c0c0; border-right: 1px solid #c0c0c0;">
+            Target script by post tags
+            <span class="dashicons dashicons-info-outline cminds-package-show-tooltip" style="color:green"
+                  title="Select post tags where the script should load."></span></td>
+        <td style="text-align:center; width:30%; border-bottom: 1px solid #c0c0c0;"><span class="dashicons dashicons-no" style="color:red"></span></td>
+        <td style="text-align:center; width:30%; border-bottom: 1px solid #c0c0c0;"><span class="dashicons dashicons-yes" style="color:green"></span></td>
+    </tr>
+
     <tr>
         <td style="width:40%; border-bottom: 1px solid #c0c0c0; border-right: 1px solid #c0c0c0;">
             Target by device
