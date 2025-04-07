@@ -178,7 +178,6 @@ jQuery(document).ready(function($) {
 				url: ajax_cm_handfsl_vars.ajaxurl,
 				data: {
 					action: 'cmhandfsl_create_update_rule',
-					nonce: ajax_cm_handfsl_vars.get_unique_id_nonce,
 					mode: 'create',
 					item_name: item_name.val(),
 					item_code: item_code.val(),
@@ -246,7 +245,6 @@ jQuery(document).ready(function($) {
 				url: ajax_cm_handfsl_vars.ajaxurl,
 				data: {
 					action: 'cmhandfsl_create_update_rule',
-					nonce: ajax_cm_handfsl_vars.get_unique_id_nonce,
 					mode: 'update',
 					id: rowkey,
 					item_name: item_name.val(),
@@ -279,7 +277,6 @@ jQuery(document).ready(function($) {
                 url: ajax_cm_handfsl_vars.ajaxurl,
                 data: {
                     action: 'cmhandfsl_delete_rule',
-					nonce: ajax_cm_handfsl_vars.get_unique_id_nonce,
                     id: rowkey,
                 },
                 method: "POST"

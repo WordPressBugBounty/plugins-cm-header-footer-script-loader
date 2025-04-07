@@ -37,98 +37,87 @@ if ( !class_exists( 'CMHeaderAndFooterSLBackend' ) ) {
 		}
 		
 		public function cmhandfsl_create_update_rule() {
-			if (!isset($_POST['nonce']) || !wp_verify_nonce($_POST['nonce'], CMHeaderAndFooterSL::$plugin_slug . '_ajax_get_unique_id')) {
-				wp_die();
-			} else if (!current_user_can('manage_options')) {
-				wp_die();
+		
+			$mode = $_POST['mode'];
+			
+			if($mode == 'update') {
+				$id = $_POST['id'];
 			} else {
-				$mode = $_POST['mode'];
-				
-				if($mode == 'update') {
-					$id = $_POST['id'];
-				} else {
-					$id = $this->get_unique_id();	
-				}
-				
-				$item_name = $_POST['item_name'];
-				$item_code = json_encode( $_POST['item_code'], JSON_HEX_TAG | JSON_HEX_APOS | JSON_HEX_QUOT | JSON_HEX_AMP | JSON_UNESCAPED_UNICODE );
-				$item_note = $_POST['item_note'];
-				$item_type = $_POST['item_type'];
-				$item_device = $_POST['item_device'];
-				$item_disabled = $_POST['item_disabled'];
-				$item_location = $_POST['item_location'];
-				$item_load = $_POST['item_load'];
-				$item_load_cpt = $_POST[ 'item_load_cpt' ];
-				$item_load_postpage = $_POST[ 'item_load_postpage' ];
-				$item_load_url = $_POST['item_load_url'];
-				$item_load_cats = $_POST['item_load_cats'];
-				$item_load_tags = $_POST['item_load_tags'];
-				
-				$item_timeframe_from = array();
-				if($_POST[ 'item_timeframe_from' ] != '') {
-					$item_timeframe_from = explode("|", $_POST[ 'item_timeframe_from' ]);
-				}
-				$item_timeframe_to = array();
-				if($_POST[ 'item_timeframe_to' ] != '') {
-					$item_timeframe_to = explode("|", $_POST[ 'item_timeframe_to' ]);
-				}
-				
-				$item_timeframe = array();
-				if(count($item_timeframe_from) > 0) {
-					$tf_counter = 0; 
-					foreach($item_timeframe_from as $fromkey=>$fromval) {
-						$item_timeframe[$tf_counter]['from'] = $fromval;
-						$item_timeframe[$tf_counter]['to'] = $item_timeframe_to[$fromkey];
-						$tf_counter++;
-					}
-				}
-				
-				$scripts = get_option( CMHeaderAndFooterSL::$plugin_slug . '_scripts' );
-				$scripts = maybe_unserialize( $scripts );
-				
-				$scripts[$id] = array(
-					'item_ID' => $id,
-					'item_name' => $item_name,
-					'item_code' => $item_code,
-					'item_note' => $item_note,
-					'item_type' => $item_type,
-					'item_device' => $item_device,
-					'item_disabled' => $item_disabled,
-					'item_destination' => $item_location,
-					'item_load' => $item_load,
-					'item_load_cpt' => $item_load_cpt,
-					'item_load_postpage' => $item_load_postpage,
-					'item_load_url' => $item_load_url,
-					'item_load_cats' => $item_load_cats,
-					'item_load_tags' => $item_load_tags,
-					'item_timeframe' => $item_timeframe,
-				);
-				
-				if($mode == 'create') {
-					arsort($scripts);
-				}
-					
-				$scripts = maybe_serialize( $scripts );
-				update_option( CMHeaderAndFooterSL::$plugin_slug . '_scripts', $scripts, 'yes' );
-				
-				wp_die();
+				$id = $this->get_unique_id();	
 			}
+			
+			$item_name = $_POST['item_name'];
+			$item_code = json_encode( $_POST['item_code'], JSON_HEX_TAG | JSON_HEX_APOS | JSON_HEX_QUOT | JSON_HEX_AMP | JSON_UNESCAPED_UNICODE );
+			$item_note = $_POST['item_note'];
+			$item_type = $_POST['item_type'];
+			$item_device = $_POST['item_device'];
+			$item_disabled = $_POST['item_disabled'];
+			$item_location = $_POST['item_location'];
+			$item_load = $_POST['item_load'];
+			$item_load_cpt = $_POST[ 'item_load_cpt' ];
+			$item_load_postpage = $_POST[ 'item_load_postpage' ];
+			$item_load_url = $_POST['item_load_url'];
+			$item_load_cats = $_POST['item_load_cats'];
+			$item_load_tags = $_POST['item_load_tags'];
+			
+			$item_timeframe_from = array();
+			if($_POST[ 'item_timeframe_from' ] != '') {
+				$item_timeframe_from = explode("|", $_POST[ 'item_timeframe_from' ]);
+			}
+			$item_timeframe_to = array();
+			if($_POST[ 'item_timeframe_to' ] != '') {
+				$item_timeframe_to = explode("|", $_POST[ 'item_timeframe_to' ]);
+			}
+			
+			$item_timeframe = array();
+			if(count($item_timeframe_from) > 0) {
+				$tf_counter = 0; 
+				foreach($item_timeframe_from as $fromkey=>$fromval) {
+					$item_timeframe[$tf_counter]['from'] = $fromval;
+					$item_timeframe[$tf_counter]['to'] = $item_timeframe_to[$fromkey];
+					$tf_counter++;
+				}
+			}
+			
+			$scripts = get_option( CMHeaderAndFooterSL::$plugin_slug . '_scripts' );
+			$scripts = maybe_unserialize( $scripts );
+			
+			$scripts[$id] = array(
+				'item_ID' => $id,
+				'item_name' => $item_name,
+				'item_code' => $item_code,
+				'item_note' => $item_note,
+				'item_type' => $item_type,
+				'item_device' => $item_device,
+				'item_disabled' => $item_disabled,
+				'item_destination' => $item_location,
+				'item_load' => $item_load,
+				'item_load_cpt' => $item_load_cpt,
+				'item_load_postpage' => $item_load_postpage,
+				'item_load_url' => $item_load_url,
+				'item_load_cats' => $item_load_cats,
+				'item_load_tags' => $item_load_tags,
+				'item_timeframe' => $item_timeframe,
+			);
+			
+			if($mode == 'create') {
+				arsort($scripts);
+			}
+				
+			$scripts = maybe_serialize( $scripts );
+			update_option( CMHeaderAndFooterSL::$plugin_slug . '_scripts', $scripts, 'yes' );
+			
+			wp_die();
 		}
 		
 		public function cmhandfsl_delete_rule() {
-			if (!isset($_POST['nonce']) || !wp_verify_nonce($_POST['nonce'], CMHeaderAndFooterSL::$plugin_slug . '_ajax_get_unique_id')) {
-				wp_die();
-			} else if (!current_user_can('manage_options')) {
-				wp_die();
-			} else {
-				$id = $_POST['id'];
-				$scripts = get_option( CMHeaderAndFooterSL::$plugin_slug . '_scripts' );
-				$scripts = maybe_unserialize( $scripts );
-				unset($scripts[$id]);
-				$scripts = maybe_serialize( $scripts );
-				update_option( CMHeaderAndFooterSL::$plugin_slug . '_scripts', $scripts, 'yes' );
-				wp_die();
-			}
+			$id = $_POST['id'];
+			$scripts = get_option( CMHeaderAndFooterSL::$plugin_slug . '_scripts' );
+			$scripts = maybe_unserialize( $scripts );
+			unset($scripts[$id]);
+			$scripts = maybe_serialize( $scripts );
+			update_option( CMHeaderAndFooterSL::$plugin_slug . '_scripts', $scripts, 'yes' );
+			wp_die();
 		}
 	
 		/**
