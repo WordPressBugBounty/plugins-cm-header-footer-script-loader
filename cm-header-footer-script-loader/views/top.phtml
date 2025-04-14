@@ -2,7 +2,7 @@
 echo do_shortcode('[cminds_free_activation id="cmhandfsl"]');
 ?>
 <div style="height:15px;"></div>
-<div class="cminds_settings_description">
+<div class="cminds_settings_description_hfsl">
 	<p>
         <strong><?php _e( 'Plugin Usage Instructions:', CMHeaderAndFooterSL::$plugin_text_domain ); ?></strong> <a href="javascript:void(0)" onclick="jQuery(this).parent().next().slideToggle()"><?php _e( 'Show/Hide', CMHeaderAndFooterSL::$plugin_text_domain ); ?></a>
     </p>
@@ -18,12 +18,11 @@ echo do_shortcode('[cminds_free_activation id="cmhandfsl"]');
     </div>
     <div>
         <div class="cmtt_field_message_container"></div>
-        <form method="post">
-            <input title="<?php _e( 'Warning! This option will completely erase all of the data stored by the CM Header & Footer Script Loader in the database: items, options etc. <br/> It cannot be reverted."', CMHeaderAndFooterSL::$plugin_text_domain ); ?>
-                   onclick="return confirm('<?php _e( 'All database items of CM Header & Footer Script Loader (scripts, custom include settings) will be erased. This cannot be reverted.', CMHeaderAndFooterSL::$plugin_text_domain ); ?>')"
-                   type="submit" name="<?php echo CMHeaderAndFooterSL::$plugin_slug . '_cleanup'; ?>" value="<?php _e( 'Clenup database', CMHeaderAndFooterSL::$plugin_text_domain ); ?>" class="button cmtt-cleanup-button"/>
+        <form method="post" style="width:97.5%">
+			<input title="<?php _e( 'Warning! This option will completely erase all of the data stored by the CM Header & Footer Script Loader in the database: items, options etc. <br/> It cannot be reverted.', CMHeaderAndFooterSL::$plugin_text_domain ); ?>" onclick="return confirm('<?php _e( 'All database items of CM Header & Footer Script Loader (scripts, custom include settings) will be erased. This cannot be reverted.', CMHeaderAndFooterSL::$plugin_text_domain ); ?>')" type="submit" name="<?php echo CMHeaderAndFooterSL::$plugin_slug . '_cleanup'; ?>" value="<?php _e( 'Cleanup database', CMHeaderAndFooterSL::$plugin_text_domain ); ?>" class="button cmtt-cleanup-button"/>
 			<?php wp_nonce_field( CMHeaderAndFooterSL::$plugin_slug . '_cleanup', CMHeaderAndFooterSL::$plugin_slug . '_cleanup_nonce' ); ?>
-        </form>
+			<a onclick="jQuery('.onlyinpro').toggleClass('hide'); jQuery('.onlyinpro_empty').toggleClass('show'); return false;" style="background:lightgreen; float:right;" class="button cmhfsl-cleanup-button">Show/hide Pro options</a>
+		</form>
     </div>
 </div>
 <br/>

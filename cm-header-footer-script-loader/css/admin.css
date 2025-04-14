@@ -136,6 +136,9 @@ div.cm-handfsl_help:hover { background-image: url('images/help_hover.png'); }
 	margin-right: 5px;
 }
 
+.onlyinpro.hide { display:none; }
+.onlyinpro_empty.show { display: block !important; }
+
 @media only screen and (max-width: 768px) {
 	
 }

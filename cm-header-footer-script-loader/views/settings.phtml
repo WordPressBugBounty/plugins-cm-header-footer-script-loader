@@ -127,7 +127,7 @@ jQuery(function($) {
 								</select>
 							</div>
 						</div>
-						<div class="cmhandfsl-wrapper-new-row-5 cmhandfsl-custom-script-row-inner">
+						<div class="cmhandfsl-wrapper-new-row-5 cmhandfsl-custom-script-row-inner onlyinpro">
 							<div class="cmhandfsl-wrapper-new-col-left handfsl_field_help_container">
 								<label style="color:gray;">
 									<?php _e( 'Device Type:', CMHeaderAndFooterSL::$plugin_text_domain ); ?>
@@ -189,7 +189,7 @@ jQuery(function($) {
 								
 							</div>
 						</div>
-						<div class="cmhandfsl-wrapper-new-row-7 cmhandfsl-custom-script-row-inner">
+						<div class="cmhandfsl-wrapper-new-row-7 cmhandfsl-custom-script-row-inner onlyinpro">
 							<div class="cmhandfsl-wrapper-new-col-left handfsl_field_help_container">
 								<label style="color:gray;">
 									<?php _e( 'Timeframe:', CMHeaderAndFooterSL::$plugin_text_domain ); ?>
@@ -214,11 +214,15 @@ jQuery(function($) {
 						</div>
 					</div>
 					
+					<div class="onlyinpro_empty" style="display:none;">
+						<p style="margin-left:22.5%;">Pro options are hidden. Click the button <span style="font-weight:bold;color:#00cd00;">"Show/hide Pro options"</span> to see them.</p>
+					</div>
+					
 					<div class="cmhandfsl-wrapper-new-row-8 cmhandfsl-custom-script-row-inner">
 						<div>
 							<input type="button" class="button-primary" value="Save Script" id="cmhandfsl-create-rule-btn" />
 						</div>
-						<div class="last">
+						<div class="last onlyinpro">
 							<label><span style="color:gray;">Pause Script:</span><br><span style="color:green;">(Only in Pro)</span></label>							
 							<input type="checkbox" disabled style="vertical-align:bottom;" />
 							<input type="hidden" name="item-disabled" value="0" />
@@ -348,7 +352,7 @@ jQuery(function($) {
 												</select>
 											</div>
 										</div>
-										<div class="cmhandfsl-wrapper-new-row-5 cmhandfsl-custom-script-row-inner">
+										<div class="cmhandfsl-wrapper-new-row-5 cmhandfsl-custom-script-row-inner onlyinpro">
 											<div class="cmhandfsl-wrapper-new-col-left handfsl_field_help_container">
 												<label style="color:gray;">
 													<?php _e( 'Device Type:', CMHeaderAndFooterSL::$plugin_text_domain ); ?>
@@ -415,7 +419,7 @@ jQuery(function($) {
 												
 											</div>
 										</div>
-										<div class="cmhandfsl-wrapper-new-row-7 cmhandfsl-custom-script-row-inner">
+										<div class="cmhandfsl-wrapper-new-row-7 cmhandfsl-custom-script-row-inner onlyinpro">
 											<div class="cmhandfsl-wrapper-new-col-left handfsl_field_help_container">
 												<label style="color:gray;">
 													<?php _e( 'Timeframe:', CMHeaderAndFooterSL::$plugin_text_domain ); ?>
@@ -448,6 +452,10 @@ jQuery(function($) {
 											</div>
 										</div>
 									</div>
+									
+									<div class="onlyinpro_empty" style="display:none;">
+										<p style="margin-left:22.5%;">Pro options are hidden. Click the button <span style="font-weight:bold;color:#00cd00;">"Show/hide Pro options"</span> to see them.</p>
+									</div>
 								
 									<div class="cmhandfsl-wrapper-new-row-8 cmhandfsl-custom-script-row-inner">
 										<div>
@@ -455,7 +463,7 @@ jQuery(function($) {
 											&nbsp;
 											<input type="button" class="button-primary" value="Delete" id="cmhandfsl-delete-rule-btn" data-rowkey="<?php echo esc_attr( $rowKey ); ?>" />
 										</div>
-										<div class="last">
+										<div class="last onlyinpro">
 											<label><span style="color:gray;">Pause Script:</span><br><span style="color:green;">(Only in Pro)</span></label>
 											<input type="checkbox" disabled style="vertical-align:bottom;" />
 											<input type="hidden" name="item-disabled" value="0" />

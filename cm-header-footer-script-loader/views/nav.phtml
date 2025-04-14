@@ -4,9 +4,14 @@
 <div id="cmhandfsl_admin_nav">
 	<ul class="subsubsub">
 		<?php 
-		foreach ( $submenus as $menu ): ?>
-		<li><a href="<?php echo esc_attr( $menu['link'] ); ?>" <?php echo ( $menu['current'] )?'class="current"':''; ?> <?php if ( $menu['external'] ){ echo 'target="_blank"'; } ?>><?php echo esc_html( $menu['title'] ); ?></a></li>
-		<?php endforeach; ?>
+		foreach ( $submenus as $menu ) {
+			if($menu['title'] != '<span class="cmseparator"></span>') {
+				?>
+				<li><a href="<?php echo esc_attr( $menu['link'] ); ?>" <?php echo ( $menu['current'] )?'class="current"':''; ?> <?php if ( $menu['external'] ){ echo 'target="_blank"'; } ?>><?php echo esc_html( $menu['title'] ); ?></a></li>
+				<?php
+			}
+		}
+		?>
 	</ul>
 	<br class="clear" />
 </div>
