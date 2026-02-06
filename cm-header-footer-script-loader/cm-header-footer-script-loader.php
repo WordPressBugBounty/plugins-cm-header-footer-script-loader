@@ -1,9 +1,11 @@
 <?php
 /*
 Plugin Name: CM Header & Footer Script Loader
+Plugin URI: https://www.cminds.com/wordpress-plugins-library/wordpress-header-and-footer-script-loader-plugin/
 Description: This plugin allows you to load scripts and styles on selected posts or pages
-Version: 1.2.9
+Version: 1.3.0
 Author: CreativeMindsSolutions
+Author URI: https://www.cminds.com/
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 */
@@ -24,7 +26,7 @@ if ( !class_exists( 'CMHeaderAndFooterSL' ) ) {
 	class CMHeaderAndFooterSL {
 
 		protected static $instance = NULL;
-		public static $version = '1.2.9';
+		public static $version = '1.3.0';
 
 		public static $plugin_text_domain = 'cm-handfsl';
 		public static $plugin_slug = 'cm-handfsl';

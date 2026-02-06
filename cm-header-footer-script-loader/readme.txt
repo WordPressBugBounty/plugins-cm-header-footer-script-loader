@@ -5,8 +5,8 @@ Donate link: https://www.cminds.com/
 Author URI: https://www.cminds.com/
 Tags: footer, header, custom css, insert javascript, insert HTML
 Requires at least: 5.4.0
-Tested up to: 6.8
-Stable Tag: 1.2.9
+Tested up to: 6.9
+Stable Tag: 1.3.0
 Requires PHP: 5.2.4
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -32,7 +32,7 @@ You have the option to choose whether a script should be automatically or manual
 
 The [Insert Headers and Footers Plugin Premium editions](https://www.cminds.com/wordpress-plugins-library/wordpress-header-and-footer-script-loader-plugin/) includes even more powerful features, such as: each post has a header and footer metabox that allows you to control the various scripts and styles, device selection for each script and stlye and much more.
 
-### Insert Headers and Footers Plugin Introduction Video
+### Insert Headers and Footers Plugin Introduction Video (Pro Version)
 
 [vimeo https://vimeo.com/141020978]
 
@@ -103,6 +103,10 @@ List of all [WordPress Plugins](https://www.cminds.com) by CreativeMinds
 2. Activate the plugin through the 'Plugins' menu in WordPress.
 
 == Changelog ==
+
+= 1.3.0 =
+Release Date: 18 Sep 2025
+* Added plugin URI for fix missing homepage issue which reported by WordFence
 
 = 1.2.9 =
 Release Date: 12 Jun 2025
