@@ -5,8 +5,8 @@ Donate link: https://www.cminds.com/
 Author URI: https://www.cminds.com/
 Tags: footer, header, custom css, insert javascript, insert HTML
 Requires at least: 5.4.0
-Tested up to: 6.9
-Stable Tag: 1.3.0
+Tested up to: 7.0
+Stable Tag: 1.3.1
 Requires PHP: 5.2.4
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html

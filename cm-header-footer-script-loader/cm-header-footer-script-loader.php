@@ -3,7 +3,7 @@
 Plugin Name: CM Header & Footer Script Loader
 Plugin URI: https://www.cminds.com/wordpress-plugins-library/wordpress-header-and-footer-script-loader-plugin/
 Description: This plugin allows you to load scripts and styles on selected posts or pages
-Version: 1.3.0
+Version: 1.3.1
 Author: CreativeMindsSolutions
 Author URI: https://www.cminds.com/
 License: GPLv2 or later
