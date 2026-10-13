@@ -7,7 +7,7 @@ $cminds_plugin_config = array(
 	'plugin-is-pro'				 => FALSE,
 	'plugin-is-addon'			 => FALSE,
 	'plugin-has-addons'			 => TRUE,
-	'plugin-version'			 => '1.3.0',
+	'plugin-version'			 => '1.3.2',
 	'plugin-addons'        => array(
 		array(
 			'title' => 'Search and Replace Plugin',

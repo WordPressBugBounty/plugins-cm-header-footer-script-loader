@@ -6,7 +6,7 @@ Author URI: https://www.cminds.com/
 Tags: footer, header, custom css, insert javascript, insert HTML
 Requires at least: 5.4.0
 Tested up to: 7.0
-Stable Tag: 1.3.1
+Stable Tag: 1.3.2
 Requires PHP: 5.2.4
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -103,6 +103,15 @@ List of all [WordPress Plugins](https://www.cminds.com) by CreativeMinds
 2. Activate the plugin through the 'Plugins' menu in WordPress.
 
 == Changelog ==
+
+= 1.3.2 =
+Release Date: 11 Oct 2026
+* Security: Added manage_options capability checks to package registration, deregistration, and skip-registration AJAX handlers.
+* Security: Restricted package administration shortcodes and registration helpers to users with the manage_options capability.
+* Security: Added plugin- and box-specific nonce checks to guide, upgrade, and registration visibility changes.
+* Security: Added nonce verification to registration, deregistration, skip-registration, and deactivation-feedback AJAX requests.
+* Updated registration and feedback forms and visibility links to send the required security tokens.
+* Synchronized the plugin header, runtime version, package configuration, and stable tag to 1.3.2.
 
 = 1.3.0 =
 Release Date: 18 Sep 2025
